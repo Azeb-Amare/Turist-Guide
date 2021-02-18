@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Tourism.css">
+    <style>
+        .columnside1 {
+            float: left;
+            width: 15%;
+            padding: 25% 1% 5% 1%;
+        }
+        
+        .column.middle {
+            margin: 7px;
+            background-color: white;
+            float: left;
+            width: 70%;
+        }
+        
+        .column.side2 {
+            float: left;
+            width: 12%;
+            padding: 25% 1% 5% 1%;
+        }
+        
+        .ltr {
+            position: relative;
+            animation-name: toright;
+            animation-duration: 1s;
+        }
+        
+        @keyframes toright {
+            0% {
+                right: -1000px;
+            }
+            100% {
+                right: 0px;
+            }
+        }
+        
+        .row:after {
+            clear: both;
+        }
+        
+        h2 {
+            color: mediumblue;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        h3 {
+            color: mediumblue;
+            text-align: center;
+            text-decoration: underline;
+            padding-top: 2%
+        }
+        
+        td {
+            margin: auto;
+            transition: transform .2s;
+        }
+        
+        td:hover {
+            transform: scale(1.5);
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .imgtext {
+            font-family: Arial;
+            font-size: 50%;
+        }
+        
+        .container {
+            position: relative;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        
+        .container img {
+            vertical-align: middle;
+            position: relative;
+        }
+        
+        .container .content {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            /* Black background with transparency */
+            color: #f1f1f1;
+            width: 100%;
+            padding: 5%;
+        }
+        
+        .footer {
+            clear: both;
+            background-color: rgb(0, 0, 50);
+            padding: 10% 10% 10% 7%;
+            text-align: center;
+            text-shadow: 10px 5px 10px;
+            position: relative;
+            -webkit-animation-name: toleft2;
+            -webkit-animation-duration: 1s;
+        }
+        
+        @keyframes toleft2 {
+            0% {
+                left: -1500px;
+            }
+            100% {
+                left: 0px;
+            }
+        }
+        
+        .rtl {
+            position: relative;
+            -webkit-animation-name: toleft;
+            -webkit-animation-duration: 1s;
+        }
+        
+        @keyframes toleft {
+            0% {
+                left: -1500px;
+            }
+            100% {
+                left: 0px;
+            }
+        }
+        
+        #headeractive {
+            background-color: blue;
+        }
+        
+        .container img {
+            max-width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="image.jpg" width="60" height="60" class="headimg">
+        <h1>ETHIO TOURISM</h1>
+    </div>
+
+    <header>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a class="active" href="#">Natural Attractions</a></li>
+            <li><a href="Man-Made.html">Man Made Attractions</a></li>
+        </ul>
+    </header>
+    <div class="ltr">
+        <div class="row">
+            <div class="columnside1">
+                <h2><a href="ad.html">Advertise Your Products Here!!</a></h2>
+            </div>
+
+            <div class="column middle">
+                <h2>Natural attractions in Ethiopia</h2>
+
+                <table cellspacing="50">
+                    <tr>
+                        <td class="imgtext">
+                            <div class="container">
+                                <img src="Danakil Depression 1.jpg" />
+                                <div class="content">Afar Region-Danakil Depression
+                                </div>
+                        </td>
+                        <td class="imgtext">
+                            <div class="container">
+                                <img src="Bo Napark.jpg" />
+                                <div class="content">Yabelo Wild Life Sanctury</div>
+                        </td>
+                        <td class="imgtext">
+                            <div class="container">
+                                <img src="image.jpg" />
+                                <div class="content">Simene Mountains</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imgtext">
+                            <div class="container">
+                                <img src="Yabelo.jpg" />
+                                <div class="content">Destination Borana National Park</div>
+                        </td>
+                        <td class="imgtext">
+                            <div class="container">
+                                <img src="Bale.jpg" />
+                                <div class="content">Bale Mountains National Park</div>
+                        </td>
+                        <td class="imgtext">
+                            <div class="container">
+                                <img src="Omo Valley.jpg" />
+                                <div class="content">The Lower Omo Valley</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="imgtext">
+                            <div class="container">
+                                <img src="Afar.jpg" />
+                                <div class="content">Destination-Afar</div>
+                        </td>
+                        <td class="imgtext">
+                            <div class="container">
+                                <img src="Abay.jpg" />
+                                <div class="content">Destination-Nile Fountain</div>
+                        </td>
+                    </tr>
+                </table>
+                <h4><a href="#top">Go to the Top</a></h4>
+                </div>
+
+                </div>
+                </div>
+                <div class="column side2">right-floated</div>
+
+                <div class="footer">
+                    <h4><a href="contus.html">Contact-Us</a></h4>
+                    <h4><a href="Home.html">About-Us</a></h4>
+                    <h4>Buy Products</h4>
+                    <p>&copy; Copyright 2018,All Rights Reserved|ethiotourism.net</p>
+                </div>
+
+</body>
+
+</html>

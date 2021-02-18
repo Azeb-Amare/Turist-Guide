@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Tourism.css">
+    <style>
+    .column.side1 {
+            margin: 2px 7px;
+            float: left;
+            width: 12%;
+            padding: 25% 1% 5% 1%;
+        }
+        
+        .column.middle {
+            background-color: white;
+            float: left;
+            width: 70%;
+        }
+        
+        .column.side2 {
+            float: left;
+            width: 12%;
+            padding: 25% 1% 5% 1%;
+        }
+        
+        .row:after {
+            clear: both;
+        }
+        
+        h2 {
+            color: mediumblue;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        h3 {
+            color: mediumblue;
+            text-align: center;
+            text-decoration: underline;
+            padding-top: 2%
+        }
+        
+        .container {
+            position: relative;
+            width: 80%;
+        }
+        
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            -webkit-transform: scale(0);
+            transition: .3s ease;
+        }
+        
+        .container:hover .overlay {
+            transform: scale(1)
+        }
+        
+        .text {
+            color: white;
+            font-size: 12px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        @keyframes btm {
+            0% {
+                top: 1000px;
+            }
+            100% {
+                top: 0px;
+            }
+        }
+    }
+    #headeractive {
+        background-color: blue;
+    }
+    .ftop {
+        position: relative;
+        -webkit-animation-name: allflows;
+        -webkit-animation-duration: 1s;
+    }
+    @keyframes allflows {
+        0% {
+            top: -1000px;
+        }
+        
+        100% {
+            top: 0px;
+        }
+    }
+    .rtl {
+        position: relative;
+        -webkit-animation-name: toleft;
+        -webkit-animation-duration: 1s;
+    }
+    @keyframes toleft {
+        0% {
+            left: -1500px;
+        }
+        
+        100% {
+            left: 0px;
+        }
+    }
+    .ltr {
+        position: relative;
+        animation-name: toright;
+        animation-duration: 1s;
+    }
+    @keyframes toright {
+        0% {
+            right: -1000px;
+        }
+        
+        100% {
+            right: 0px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="ftop">
+        <div class="header">
+            <img src="image.jpg" width="60" height="60" class="headimg">
+            <h1>ETHIO TOURISM</h1>
+        </div>
+
+        <header>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="natattr.html">Natural Attractions</a></li>
+                <li><a class="active" href="#">Man Made Attractions</a></li>
+            </ul>
+        </header>
+        <div class="row">
+            <div class="column side1">
+                <h2><a href="ad.html">Advertise Your Products HERE!!</a></h2>
+            </div>
+        </div>
+        <div class="column middle">
+            <h2>Man-Made Attractions</h2>
+            <table cellspacing="30">
+                <tr>
+                    <td class="ltr">
+                        <div class="container">
+                            <img src="Lalibela!.jpg" alt="Lalibela" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    Destination-Lalibela
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="ltr">
+                        <div class="container">
+                            <img src="Afu.jfif" alt="Addis Ababa-AU" class="image">
+                            <div class="overlay">
+                                <div class="text">Destination-Addis Ababa Africa Union</div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td class="rtl">
+                        <div class="container">
+                            <img src="Dorze 1.jpg" alt="Dorze" class="image">
+                            <div class="overlay">
+                                <div class="text">Destination-Dorze Society</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ltr">
+                        <div class="container">
+                            <img src="images.jpg" alt="Harar" class="image">
+                            <div class="overlay">
+                                <div class="text">Destination-Harar</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="rtl">
+                        <div class="container">
+                            <img src="Gonder.jpg" alt="Gonder-Fasiledes" class="image">
+                            <div class="overlay">
+                                <div class="text">Destination-Gonder</div>
+                            </div>
+                        </div>
+                    </td>
+
+
+                    <td class="rtl">
+                        <div class="container">
+                            <img src="Aksum 1.jpg" alt="Gonder-Fasiledes" class="image">
+                            <div class="overlay">
+                                <div class="text">Destination-Aksum,Tigray</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ltr">
+                        <div class="container">
+                            <img src="index.jpg" alt="Harar" class="image">
+                            <div class="overlay">
+                                <div class="text">Destination-Harar Two</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="ltr">
+                        <div class="container">
+                            <img src="Konso Kantas 1.jpg" alt="Konso" class="image">
+                            <div class="overlay">
+                                <div class="text">Destination-Konso</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <h4><a href="#top">Go to the Top</a></h4>
+        </div>
+        <div class="column side2">right-floated</div>
+    </div>
+    <div class="footer">
+        <h4><a href="#">Contact-Us</a></h4>
+        <h4><a href="Home.html">About-Us</a></h4>
+        <h4>Buy Products</h4>
+        <p>&copy;copyright 2018,All Rights Reserved|ethiotourism.net</p>
+    </div>
+
+</body>
+
+</html>
